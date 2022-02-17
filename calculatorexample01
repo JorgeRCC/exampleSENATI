@@ -1,0 +1,27 @@
+class Calculadora:
+    def __init__(self, num1, num2):
+        self.opSuma = num1+num2
+        self.opResta = num1-num2
+        self.opMult = num1*num2
+        self.opDiv = round(num1/num2, 1)
+
+while True:
+    opcion = input("\noperación: ")
+    if opcion =='x':
+        print("**Gracias**\n")
+        break
+    else:
+        num1 = int(input("\nPrimer numero: "))
+        num2 = int(input("\nSegundo numero: "))
+        objRespuesta = Calculadora(num1, num2)
+    
+    if opcion=='+':
+        print(f'\nLa suma es: {objRespuesta.opSuma}\n')
+    elif opcion == '-':
+        print(f'\nLa resta es: {objRespuesta.opResta}\n')
+    elif opcion == '*':
+        print(f'\nLa multiplicacion es: {objRespuesta.opMult}\n')
+    elif opcion == '/':
+        print(f'\nLa divicion es: {objRespuesta.opDiv}\n')
+    else:
+        print("\nOPCION NO VALIDA")
