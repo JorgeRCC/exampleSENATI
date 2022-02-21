@@ -1,0 +1,19 @@
+class Persona:
+    pass
+    def __init__(self, nombre, edad):
+        self.name = nombre
+        self.age = edad
+    def descripcion(self):
+        return '\n{} tiene {} años\n'.format(self.edad,name,self.age)
+    def comentario(self, saludo):
+        return '{} dice: {}'.format(self.name, saludo)
+    
+    
+intructor = Persona('Juanki', 36)
+print(intructor.comentario('Buenos Dias Jovenes'))
+    
+alumno = Persona ('Katerine', 20)
+print(alumno.comentario('Gracias por aceptarnos'))
+    
+esposa = Persona('Maria', 36)
+print(esposa.comentario('gracias'))
