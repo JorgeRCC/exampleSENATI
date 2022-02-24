@@ -1,0 +1,31 @@
+from mailbox import NoSuchMailboxError 
+
+class Persona:
+	#creacion del contructor
+	def __init__(self, name, age):
+		self.nombre=name
+		self.edad=age
+
+	def metodo1 (self):
+		return '\n{} tiene {}\n'.format(self.nombre, self.edad)
+	
+	def metodo2 (self):
+		return '\n{} dice: {}\n'.format(self.nombre,frase)
+	
+
+	#creacion del destructor
+
+	def __del__(self):
+		self.nombre
+		self.edad
+		print('**La memoria fue borrada**\n')
+
+#creacion de los objetos
+doctor = Persona('Mario' , 45)
+enfermero = Persona('Julio' , 30)
+
+print(doctor.metodo1())
+print(enfermero.metodo1())
+
+print(doctor.metodo2('Hola bienvenido'))
+print(enfermero.metodo2('Hola bienvenido'))
