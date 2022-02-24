@@ -1,0 +1,20 @@
+#funcion para atributos
+
+class Persona:
+	edad=30
+	nombre='Jorge'
+
+intructor = Persona()
+
+#hasattr permite preguntar si existe un atributo con el nombre indicado.
+
+print('Humano tu nombre es:', intructor.nombre)
+print(f'\nHumano tu nombre es: {intructor.nombre}\n')
+print('Humano tienes edad: ',hasattr(intructor, 'edad'))
+print('\n')
+
+#Reescribir o cambiar un atributo
+print(intructor.nombre)
+setattr(intructor, 'nombre','Brandon')
+print(intructor.nombre)
+print('\n')
